@@ -28,10 +28,18 @@ app.use(express.json());
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {
+  // Explicitly set CORS headers again for testing
+  res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  
   res.json({ 
     status: "ok", 
     message: "GrowthViz Backend is running",
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
+    corsHeaders: {
+      origin: req.headers.origin,
+      setHeader: res.getHeader('Access-Control-Allow-Origin')
+    }
   });
 });
 
