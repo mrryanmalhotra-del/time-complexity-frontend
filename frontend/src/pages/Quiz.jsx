@@ -7,7 +7,7 @@ import { complexityFunctions, complexityColors } from '../data/presets';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-const API_URL = 'https://time-complexity-backend.onrender.com/api';
+const API_URL = 'https://time-complexity-backend-1.onrender.com/api';
 
 // Mini complexity graph component for quiz options
 const MiniComplexityGraph = ({ complexity, darkMode }) => {
