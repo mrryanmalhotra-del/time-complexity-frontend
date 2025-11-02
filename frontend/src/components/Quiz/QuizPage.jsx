@@ -31,7 +31,7 @@ export default function QuizPage({ darkMode, onBack }) {
   // Start quiz
   const startQuiz = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/api/quiz/sample?count=${quizLength}&maxN=1000`)
+      const response = await axios.get(`https://time-complexity-backend.onrender.com/api/quiz/sample?count=${quizLength}&maxN=1000`)
       setQuestions(response.data.questions)
       setTimeRemaining(QUIZ_DURATIONS[quizLength])
       setQuizState('active')
@@ -101,7 +101,7 @@ export default function QuizPage({ darkMode, onBack }) {
     
     try {
       const timeTaken = QUIZ_DURATIONS[quizLength] - timeRemaining
-      const response = await axios.post('http://localhost:3001/api/quiz/submit', {
+      const response = await axios.post('https://time-complexity-backend.onrender.com/api/quiz/submit', {
         answers,
         timeTaken
       })
@@ -411,3 +411,20 @@ export default function QuizPage({ darkMode, onBack }) {
     </div>
   )
 }
+// Start quiz
+const startQuiz = async () => {
+  try {
+    const response = await axios.get(
+      `https://time-complexity-backend.onrender.com/api/quiz/random?count=${quizLength}`
+    )
+    setQuestions(response.data.questions)
+    setTimeRemaining(QUIZ_DURATIONS[quizLength])
+    setQuizState('active')
+    setCurrentQuestionIndex(0)
+    setAnswers([])
+  } catch (error) {
+    console.error('Failed to load quiz:', error)
+    alert('Failed to load quiz questions. Please try again.')
+  }
+}
+

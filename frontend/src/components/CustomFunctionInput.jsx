@@ -17,7 +17,7 @@ function CustomFunctionInput({ onAddCustomFunction, darkMode }) {
     setError(null)
 
     try {
-      const response = await axios.post('http://localhost:3001/api/custom-function', {
+      const response = await axios.post('https://time-complexity-backend.onrender.com/api/custom-function', {
         expression: customExpression
       })
 

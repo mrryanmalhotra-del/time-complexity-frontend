@@ -181,7 +181,7 @@ function Sidebar({
 
     try {
       // Use static analysis endpoint only
-      const response = await axios.post('http://localhost:3001/api/analyze', {
+      const response = await axios.post('https://time-complexity-backend.onrender.com/api/analyze', {
         code: codeInput,
         language: selectedLanguage
       })
