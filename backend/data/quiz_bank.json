@@ -1,0 +1,2004 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "code",
+      "language": "python",
+      "prompt": "def get_first(arr):\n    return arr[0]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array access is O(1) - direct index lookup.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 2,
+      "type": "code",
+      "language": "python",
+      "prompt": "def swap(a, b):\n    temp = a\n    a = b\n    b = temp\n    return a, b",
+      "correct_complexity": "O(1)",
+      "explanation": "Variable swaps are O(1) - constant operations.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 3,
+      "type": "code",
+      "language": "python",
+      "prompt": "def check_even(n):\n    return n % 2 == 0",
+      "correct_complexity": "O(1)",
+      "explanation": "Modulo and comparison are O(1) operations.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 4,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = dict[key]",
+      "correct_complexity": "O(1)",
+      "explanation": "Hash table lookup averages O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 5,
+      "type": "code",
+      "language": "python",
+      "prompt": "result = a + b * c",
+      "correct_complexity": "O(1)",
+      "explanation": "Arithmetic operations are O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 6,
+      "type": "name",
+      "language": null,
+      "prompt": "Accessing an array element by index",
+      "correct_complexity": "O(1)",
+      "explanation": "Direct memory access is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 7,
+      "type": "name",
+      "language": null,
+      "prompt": "Hash table lookup (average case)",
+      "correct_complexity": "O(1)",
+      "explanation": "Hash computation and bucket access is O(1) average.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 8,
+      "type": "name",
+      "language": null,
+      "prompt": "Stack push operation",
+      "correct_complexity": "O(1)",
+      "explanation": "Adding to top of stack is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 9,
+      "type": "name",
+      "language": null,
+      "prompt": "Queue dequeue operation",
+      "correct_complexity": "O(1)",
+      "explanation": "Removing from front of queue is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 10,
+      "type": "name",
+      "language": null,
+      "prompt": "Checking if number is even",
+      "correct_complexity": "O(1)",
+      "explanation": "Single modulo operation is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 11,
+      "type": "code",
+      "language": "python",
+      "prompt": "def binary_search(arr, target):\n    left, right = 0, len(arr)-1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "correct_complexity": "O(log n)",
+      "explanation": "Binary search halves search space each iteration \u2192 O(log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 12,
+      "type": "code",
+      "language": "python",
+      "prompt": "def count_bits(n):\n    count = 0\n    while n > 0:\n        n //= 2\n        count += 1\n    return count",
+      "correct_complexity": "O(log n)",
+      "explanation": "Dividing by 2 each iteration \u2192 O(log n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 13,
+      "type": "code",
+      "language": "python",
+      "prompt": "def power_of_two(n):\n    count = 0\n    i = 1\n    while i <= n:\n        i *= 2\n        count += 1\n    return count",
+      "correct_complexity": "O(log n)",
+      "explanation": "Multiplying by 2 each iteration \u2192 O(log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 14,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "for(int i = 1; i <= n; i *= 2) {\n    cout << i << endl;\n}",
+      "correct_complexity": "O(log n)",
+      "explanation": "Loop with i *= 2 runs log\u2082(n) times.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 15,
+      "type": "code",
+      "language": "python",
+      "prompt": "while(n > 1) {\n    n /= 2;\n}",
+      "correct_complexity": "O(log n)",
+      "explanation": "Division by 2 pattern \u2192 O(log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 16,
+      "type": "name",
+      "language": null,
+      "prompt": "Binary Search",
+      "correct_complexity": "O(log n)",
+      "explanation": "Halves search space each step \u2192 O(log n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 17,
+      "type": "name",
+      "language": null,
+      "prompt": "Balanced BST Search",
+      "correct_complexity": "O(log n)",
+      "explanation": "Height of balanced tree is O(log n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 18,
+      "type": "name",
+      "language": null,
+      "prompt": "Finding height of binary tree",
+      "correct_complexity": "O(log n)",
+      "explanation": "Traverses one path from root to leaf \u2192 O(log n) for balanced.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 19,
+      "type": "name",
+      "language": null,
+      "prompt": "Skip List Search",
+      "correct_complexity": "O(log n)",
+      "explanation": "Probabilistically balanced structure \u2192 O(log n) average.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 20,
+      "type": "name",
+      "language": null,
+      "prompt": "Interpolation Search (average)",
+      "correct_complexity": "O(log n)",
+      "explanation": "Improves on binary search for uniform data \u2192 O(log log n) average, but O(log n) typical.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 21,
+      "type": "code",
+      "language": "python",
+      "prompt": "def sum_array(arr):\n    total = 0\n    for num in arr:\n        total += num\n    return total",
+      "correct_complexity": "O(n)",
+      "explanation": "Single loop through n elements \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 22,
+      "type": "code",
+      "language": "python",
+      "prompt": "def find_max(arr):\n    max_val = arr[0]\n    for i in range(1, len(arr)):\n        if arr[i] > max_val:\n            max_val = arr[i]\n    return max_val",
+      "correct_complexity": "O(n)",
+      "explanation": "One pass through array \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 23,
+      "type": "code",
+      "language": "python",
+      "prompt": "def linear_search(arr, target):\n    for i in range(len(arr)):\n        if arr[i] == target:\n            return i\n    return -1",
+      "correct_complexity": "O(n)",
+      "explanation": "Worst case checks all n elements \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 24,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    print(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "Simple loop from 0 to n \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 25,
+      "type": "code",
+      "language": "python",
+      "prompt": "def reverse_string(s):\n    return s[::-1]",
+      "correct_complexity": "O(n)",
+      "explanation": "String reversal requires touching all n characters \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 26,
+      "type": "code",
+      "language": "python",
+      "prompt": "def count_vowels(s):\n    count = 0\n    for char in s:\n        if char in 'aeiou':\n            count += 1\n    return count",
+      "correct_complexity": "O(n)",
+      "explanation": "Single pass through string \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 27,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.append(x)\nfor item in arr:\n    process(item)",
+      "correct_complexity": "O(n)",
+      "explanation": "Two sequential loops: O(1) + O(n) = O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 28,
+      "type": "name",
+      "language": null,
+      "prompt": "Linear Search",
+      "correct_complexity": "O(n)",
+      "explanation": "May need to check all n elements.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 29,
+      "type": "name",
+      "language": null,
+      "prompt": "Finding minimum in unsorted array",
+      "correct_complexity": "O(n)",
+      "explanation": "Must examine all n elements.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 30,
+      "type": "name",
+      "language": null,
+      "prompt": "Counting elements in array",
+      "correct_complexity": "O(n)",
+      "explanation": "Single traversal \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 31,
+      "type": "name",
+      "language": null,
+      "prompt": "Array traversal",
+      "correct_complexity": "O(n)",
+      "explanation": "Visiting each element once \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 32,
+      "type": "name",
+      "language": null,
+      "prompt": "Linked list traversal",
+      "correct_complexity": "O(n)",
+      "explanation": "Following n pointers \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 33,
+      "type": "code",
+      "language": "python",
+      "prompt": "def merge_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    return merge(left, right)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Divides in half (log n levels) and merges (n work per level) \u2192 O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 34,
+      "type": "code",
+      "language": "python",
+      "prompt": "def quick_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr)//2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quick_sort(left) + middle + quick_sort(right)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Average case partitions log n times with n work each \u2192 O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 35,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.sort()",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Python's Timsort is O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 36,
+      "type": "code",
+      "language": "python",
+      "prompt": "sorted_arr = sorted(arr)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Built-in sorted() uses O(n log n) algorithm.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 37,
+      "type": "name",
+      "language": null,
+      "prompt": "Merge Sort",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Divide-and-conquer: log n levels, n work per level.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 38,
+      "type": "name",
+      "language": null,
+      "prompt": "Quick Sort (average case)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Partitioning is O(n), recursion depth is O(log n) on average.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 39,
+      "type": "name",
+      "language": null,
+      "prompt": "Heap Sort",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Build heap O(n) + extract n times with O(log n) heapify.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 40,
+      "type": "name",
+      "language": null,
+      "prompt": "Timsort (Python's sort)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Hybrid merge/insertion sort \u2192 O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 41,
+      "type": "name",
+      "language": null,
+      "prompt": "Sorting using comparison-based algorithm",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Lower bound for comparison sorts is O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 42,
+      "type": "code",
+      "language": "python",
+      "prompt": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(n-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Nested loops: outer n times, inner n times \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 43,
+      "type": "code",
+      "language": "python",
+      "prompt": "def selection_sort(arr):\n    for i in range(len(arr)):\n        min_idx = i\n        for j in range(i+1, len(arr)):\n            if arr[j] < arr[min_idx]:\n                min_idx = j\n        arr[i], arr[min_idx] = arr[min_idx], arr[i]",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "For each element, scan remaining array \u2192 O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 44,
+      "type": "code",
+      "language": "python",
+      "prompt": "def print_pairs(arr):\n    for i in range(len(arr)):\n        for j in range(len(arr)):\n            print(arr[i], arr[j])",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "All pairs of n elements \u2192 n \u00d7 n = O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 45,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "for(int i = 0; i < n; i++) {\n    for(int j = 0; j < n; j++) {\n        matrix[i][j] = i + j;\n    }\n}",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Filling n\u00d7n matrix \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 46,
+      "type": "code",
+      "language": "python",
+      "prompt": "def has_duplicate(arr):\n    for i in range(len(arr)):\n        for j in range(i+1, len(arr)):\n            if arr[i] == arr[j]:\n                return True\n    return False",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Comparing each pair: n(n-1)/2 comparisons \u2192 O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 47,
+      "type": "name",
+      "language": null,
+      "prompt": "Bubble Sort",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Compares adjacent elements n times \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 48,
+      "type": "name",
+      "language": null,
+      "prompt": "Selection Sort",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Finds minimum n times, scanning n elements \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 49,
+      "type": "name",
+      "language": null,
+      "prompt": "Insertion Sort (worst case)",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "May shift up to n elements for each of n inserts \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 50,
+      "type": "name",
+      "language": null,
+      "prompt": "Checking all pairs in array",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "n choose 2 pairs = n(n-1)/2 \u2192 O(n\u00b2).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 51,
+      "type": "name",
+      "language": null,
+      "prompt": "Naive string matching",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "For m-length pattern in n-length text, worst case O(mn) \u2248 O(n\u00b2) when m\u2248n.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 52,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    for j in range(n):\n        for k in range(n):\n            print(i, j, k)",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "Three nested loops, each running n times \u2192 n\u00d7n\u00d7n = O(n\u00b3).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 53,
+      "type": "code",
+      "language": "python",
+      "prompt": "def matrix_multiply(A, B):\n    n = len(A)\n    C = [[0]*n for _ in range(n)]\n    for i in range(n):\n        for j in range(n):\n            for k in range(n):\n                C[i][j] += A[i][k] * B[k][j]\n    return C",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "Standard matrix multiplication: three nested loops \u2192 O(n\u00b3).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 54,
+      "type": "code",
+      "language": "python",
+      "prompt": "def all_triplets(arr):\n    result = []\n    for i in range(len(arr)):\n        for j in range(len(arr)):\n            for k in range(len(arr)):\n                result.append((arr[i], arr[j], arr[k]))\n    return result",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "Generating all triplets from n elements \u2192 n\u00b3 combinations.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 55,
+      "type": "name",
+      "language": null,
+      "prompt": "Matrix Multiplication (naive)",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "Three nested loops for n\u00d7n matrices \u2192 O(n\u00b3).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 56,
+      "type": "name",
+      "language": null,
+      "prompt": "Floyd-Warshall Algorithm",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "All-pairs shortest path with three nested loops \u2192 O(n\u00b3).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 57,
+      "type": "name",
+      "language": null,
+      "prompt": "Finding all triplets in array",
+      "correct_complexity": "O(n\u00b3)",
+      "explanation": "Checking all combinations of 3 elements \u2192 O(n\u00b3).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 58,
+      "type": "code",
+      "language": "python",
+      "prompt": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "Each call makes 2 recursive calls \u2192 binary tree of calls \u2192 O(2\u207f).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 59,
+      "type": "code",
+      "language": "python",
+      "prompt": "def power_set(arr):\n    if len(arr) == 0:\n        return [[]]\n    elem = arr[0]\n    rest = power_set(arr[1:])\n    return rest + [subset + [elem] for subset in rest]",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "Generates all 2\u207f subsets \u2192 O(2\u207f).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 60,
+      "type": "code",
+      "language": "python",
+      "prompt": "def solve_n_queens(n, row=0):\n    if row == n:\n        return 1\n    count = 0\n    for col in range(n):\n        if is_safe(row, col):\n            count += solve_n_queens(n, row+1)\n    return count",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "Tries all possible placements \u2192 exponential backtracking.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 61,
+      "type": "name",
+      "language": null,
+      "prompt": "Fibonacci (naive recursive)",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "T(n) = T(n-1) + T(n-2) \u2192 exponential growth.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 62,
+      "type": "name",
+      "language": null,
+      "prompt": "Tower of Hanoi",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "T(n) = 2T(n-1) + 1 \u2192 O(2\u207f).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 63,
+      "type": "name",
+      "language": null,
+      "prompt": "Generating all subsets",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "2\u207f possible subsets of n elements.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 64,
+      "type": "name",
+      "language": null,
+      "prompt": "Traveling Salesman (brute force)",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "Tries all permutations \u2192 factorial or exponential.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 65,
+      "type": "name",
+      "language": null,
+      "prompt": "Subset Sum (brute force)",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "Checks all 2\u207f subsets.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 66,
+      "type": "code",
+      "language": "python",
+      "prompt": "def permutations(arr):\n    if len(arr) <= 1:\n        return [arr]\n    result = []\n    for i in range(len(arr)):\n        rest = arr[:i] + arr[i+1:]\n        for perm in permutations(rest):\n            result.append([arr[i]] + perm)\n    return result",
+      "correct_complexity": "O(n!)",
+      "explanation": "Generates all n! permutations.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 67,
+      "type": "code",
+      "language": "python",
+      "prompt": "def traveling_salesman_brute(cities):\n    min_cost = float('inf')\n    for perm in all_permutations(cities):\n        cost = calculate_cost(perm)\n        min_cost = min(min_cost, cost)\n    return min_cost",
+      "correct_complexity": "O(n!)",
+      "explanation": "Tries all n! orderings of cities.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 68,
+      "type": "name",
+      "language": null,
+      "prompt": "Generating all permutations",
+      "correct_complexity": "O(n!)",
+      "explanation": "n! permutations of n elements.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 69,
+      "type": "name",
+      "language": null,
+      "prompt": "Traveling Salesman (exact brute force)",
+      "correct_complexity": "O(n!)",
+      "explanation": "Checks all n! routes.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 70,
+      "type": "name",
+      "language": null,
+      "prompt": "Bogosort",
+      "correct_complexity": "O(n!)",
+      "explanation": "Randomly shuffles until sorted \u2192 O(n!) average.",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 71,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "vector<int> v;\nfor(int i = 0; i < n; i++) {\n    v.push_back(i);\n}",
+      "correct_complexity": "O(n)",
+      "explanation": "Single loop with push_back (amortized O(1)) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 72,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "int sum = 0;\nfor(int i = 0; i < n; i++) {\n    sum += arr[i];\n}",
+      "correct_complexity": "O(n)",
+      "explanation": "Single loop adding elements \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 73,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "for(int i = 0; i < n; i++) {\n    for(int j = i; j < n; j++) {\n        sum += arr[i] + arr[j];\n    }\n}",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Nested loop with inner starting at i \u2192 n + (n-1) + ... + 1 = O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 74,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "priority_queue<int> pq;\nfor(int i = 0; i < n; i++) {\n    pq.push(arr[i]);\n}",
+      "correct_complexity": "O(n log n)",
+      "explanation": "n insertions into heap, each O(log n) \u2192 O(n log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 75,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "map<int, int> m;\nm[key] = value;",
+      "correct_complexity": "O(log n)",
+      "explanation": "Map insertion (balanced BST) is O(log n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 76,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "unordered_map<int, int> um;\num[key] = value;",
+      "correct_complexity": "O(1)",
+      "explanation": "Hash map insertion averages O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 77,
+      "type": "code",
+      "language": "python",
+      "prompt": "def nested_sum(matrix):\n    return sum(sum(row) for row in matrix)",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Two nested iterations over n\u00d7n matrix \u2192 O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 78,
+      "type": "code",
+      "language": "python",
+      "prompt": "def list_comp(n):\n    return [i*2 for i in range(n)]",
+      "correct_complexity": "O(n)",
+      "explanation": "List comprehension with single loop \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 79,
+      "type": "code",
+      "language": "python",
+      "prompt": "def dict_comp(n):\n    return {i: i**2 for i in range(n)}",
+      "correct_complexity": "O(n)",
+      "explanation": "Dictionary comprehension with n elements \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 80,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr = sorted(arr, reverse=True)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Sorting is O(n log n) regardless of reverse flag.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 81,
+      "type": "code",
+      "language": "python",
+      "prompt": "result = list(set(arr))",
+      "correct_complexity": "O(n)",
+      "explanation": "Converting to set is O(n), back to list is O(n) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 82,
+      "type": "code",
+      "language": "python",
+      "prompt": "max_val = max(arr)",
+      "correct_complexity": "O(n)",
+      "explanation": "Built-in max scans all elements once \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 83,
+      "type": "name",
+      "language": null,
+      "prompt": "DFS (Depth-First Search) on graph",
+      "correct_complexity": "O(n)",
+      "explanation": "Visits each vertex and edge once \u2192 O(V + E).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 84,
+      "type": "name",
+      "language": null,
+      "prompt": "BFS (Breadth-First Search) on graph",
+      "correct_complexity": "O(n)",
+      "explanation": "Visits each vertex and edge once \u2192 O(V + E).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 85,
+      "type": "name",
+      "language": null,
+      "prompt": "Dijkstra's Algorithm (binary heap)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Each vertex dequeued once, edges relaxed \u2192 O((V+E) log V).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 86,
+      "type": "name",
+      "language": null,
+      "prompt": "Prim's Algorithm (binary heap)",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Similar to Dijkstra \u2192 O((V+E) log V).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 87,
+      "type": "name",
+      "language": null,
+      "prompt": "Kruskal's Algorithm",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Sort edges O(E log E), union-find operations \u2192 O(E log E).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 88,
+      "type": "name",
+      "language": null,
+      "prompt": "Counting Sort",
+      "correct_complexity": "O(n)",
+      "explanation": "Non-comparison sort with O(n+k) where k is range \u2192 O(n) when k=O(n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 89,
+      "type": "name",
+      "language": null,
+      "prompt": "Radix Sort",
+      "correct_complexity": "O(n)",
+      "explanation": "Sorts by digits, d passes of O(n+k) \u2192 O(dn) = O(n) when d is constant.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 90,
+      "type": "name",
+      "language": null,
+      "prompt": "Bucket Sort (average)",
+      "correct_complexity": "O(n)",
+      "explanation": "Distributes into buckets and sorts \u2192 O(n) average.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 91,
+      "type": "name",
+      "language": null,
+      "prompt": "KMP String Matching",
+      "correct_complexity": "O(n)",
+      "explanation": "Preprocessing O(m) + matching O(n) \u2192 O(m+n) = O(n).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 92,
+      "type": "name",
+      "language": null,
+      "prompt": "Rabin-Karp Algorithm",
+      "correct_complexity": "O(n)",
+      "explanation": "Rolling hash for pattern matching \u2192 O(n+m) average.",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 93,
+      "type": "code",
+      "language": "python",
+      "prompt": "def mystery1(n):\n    result = 0\n    i = 1\n    while i < n:\n        result += i\n        i *= 2\n    return result",
+      "correct_complexity": "O(log n)",
+      "explanation": "Loop with i *= 2 \u2192 O(log n).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 94,
+      "type": "code",
+      "language": "python",
+      "prompt": "def mystery2(n):\n    for i in range(n):\n        j = i\n        while j > 0:\n            print(j)\n            j //= 2",
+      "correct_complexity": "O(n log n)",
+      "explanation": "Outer loop n times, inner loop log i times \u2192 O(n log n).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 95,
+      "type": "code",
+      "language": "cpp",
+      "prompt": "for(int i = 0; i < n; i++) {\n    for(int j = 0; j < i; j++) {\n        cout << i + j;\n    }\n}",
+      "correct_complexity": "O(n\u00b2)",
+      "explanation": "Outer n times, inner i times \u2192 0+1+2+...+(n-1) = O(n\u00b2).",
+      "difficulty": "medium",
+      "highlight_spans": []
+    },
+    {
+      "id": 96,
+      "type": "code",
+      "language": "python",
+      "prompt": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n-1)",
+      "correct_complexity": "O(n)",
+      "explanation": "Single recursive call \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 97,
+      "type": "code",
+      "language": "python",
+      "prompt": "def tower_hanoi(n):\n    if n == 1:\n        return 1\n    return 2 * tower_hanoi(n-1) + 1",
+      "correct_complexity": "O(2\u207f)",
+      "explanation": "T(n) = 2T(n-1) + 1 \u2192 O(2\u207f).",
+      "difficulty": "hard",
+      "highlight_spans": []
+    },
+    {
+      "id": 98,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 99,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 100,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 101,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 102,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 103,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 104,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 105,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 106,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 107,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 108,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 109,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 110,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 111,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 112,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 113,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 114,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 115,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 116,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 117,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 118,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 119,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 120,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 121,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 122,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 123,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 124,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 125,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 126,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 127,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 128,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 129,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 130,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 131,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 132,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 133,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 134,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 135,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 136,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 137,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 138,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 139,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 140,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 141,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 142,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 143,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 144,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 145,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 146,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 147,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 148,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 149,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 150,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 151,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 152,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 153,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 154,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 155,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 156,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 157,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 158,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 159,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 160,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 161,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 162,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 163,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 164,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 165,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 166,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 167,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 168,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 169,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 170,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 171,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 172,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 173,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 174,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 175,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 176,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 177,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 178,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 179,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 180,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 181,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 182,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 183,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 184,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 185,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 186,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 187,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 188,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 189,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 190,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 191,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 192,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 193,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 194,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 195,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 196,
+      "type": "code",
+      "language": "python",
+      "prompt": "return len(arr)",
+      "correct_complexity": "O(1)",
+      "explanation": "Getting length is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 197,
+      "type": "code",
+      "language": "python",
+      "prompt": "x = arr[index]",
+      "correct_complexity": "O(1)",
+      "explanation": "Array indexing is O(1).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 198,
+      "type": "code",
+      "language": "python",
+      "prompt": "arr.clear()",
+      "correct_complexity": "O(n)",
+      "explanation": "Clearing list is O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 199,
+      "type": "code",
+      "language": "python",
+      "prompt": "'substring' in string",
+      "correct_complexity": "O(n)",
+      "explanation": "String search is O(n*m) worst case \u2192 O(n) typically.",
+      "difficulty": "easy",
+      "highlight_spans": []
+    },
+    {
+      "id": 200,
+      "type": "code",
+      "language": "python",
+      "prompt": "for i in range(n):\n    arr.append(i)",
+      "correct_complexity": "O(n)",
+      "explanation": "n append operations (amortized O(1) each) \u2192 O(n).",
+      "difficulty": "easy",
+      "highlight_spans": []
+    }
+  ]
+}
